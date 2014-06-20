@@ -1,0 +1,45 @@
+p {
+    font-size: 12pt;
+}
+
+#header {
+    background-color: gray;
+    height: auto;
+    min-width: 100%;
+    margin: 0;
+    border-style:solid;
+    border-width:0;
+    border-bottom-width:3px;
+}
+
+.header_option {
+    font-size: 28px;
+    padding: 5px 20px 5px 20px;
+    display: inline;
+    color: navy;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    text-decoration: none;
+    background-color: gray;
+}
+
+.header_option:hover {
+    color:blue;
+    text-decoration: underline;
+}
+
+#header_list {
+    margin:5px; 
+    padding:8px;
+    padding-top:12px;
+    padding-left:4px;
+    list-style-type:none;
+    list-style-image: none;
+}
+
+.divider {
+    text-align: center;
+}
+
+

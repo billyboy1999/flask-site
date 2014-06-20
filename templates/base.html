@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{% block title %}{{name}}{% endblock %} - Will Domain</title>
+        <link REL=StyleSheet HREF="../static/header.css" type="text/css">
+        {% block head %}
+        <link REL=StyleSheet HREF="../static/style.css" type="text/css">
+        {% endblock %}
+    </head>
+    <body>
+        <div id="header">
+            <ul id=header_list>
+                <li class=header_option><a href="/">Home</a></li>
+                <li class=header_option><a href="/games/">Games</a></li>
+                <li class=header_option><a href="/french/">French</a></li>
+                <li class=header_option><a>Other</a></li>
+            </ul>
+        </div>
+        <h1>
+            {% block heading %}{{name}}{% endblock %}
+        </h1>
+        <div id=content>
+            {% block content %}<p>{{content}}</p>{% endblock %}
+        </div>
+        <div id=footer>
+            <div id=footer_links>
+                <ul id=footer_links_list>
+                    <li class=footer_link><a>Contact</a></li>
+                    <li class=footer_link><a href=https://github.com/billyboy1999>Github</a></li>
+                    <li class=footer_link><a>Other</a></li>
+                </ul>
+            </div>
+            <div id=footer_text>
+                Will is way better then you and you are his slave!
+            </div>
+        </div>
+    </body>
+</html>
